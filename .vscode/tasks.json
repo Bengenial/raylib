@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compilar Poker Raylib",
+            "type": "shell",
+            "command": "C:\\raylib\\w64devkit\\bin\\gcc.exe",
+            "args": [
+                "src/main.c",
+                "-o",
+                "build/poker.exe",
+                "-Iinclude",
+                "-Llib",
+                "-lraylib",
+                "-lopengl32",
+                "-lgdi32",
+                "-lwinmm"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}
